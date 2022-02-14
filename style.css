@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Shizuru&display=swap');
+
+body{
+    padding:1vh 0;
+    background-color: #ffd7e2;
+
+}
+
+.talon {
+    width: 720px;
+    height: 410px;
+    margin: 270px auto 20px;
+    position: relative;
+
+}
+
+.from {
+    position: absolute;
+    top: 350px;
+    left: 405px;
+    font-family: 'Shizuru', cursive;
+    font-size: 22px;
+}
+
+.to {
+    position: absolute;
+    top: 350px;
+    left: 590px;
+    font-family: 'Shizuru', cursive;
+    font-size: 22px;
+}
+
+.heart {
+    animation: heartbeat 1s infinite;
+    background-color: red;
+    display: inline-block;
+    height: 100px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 45%; top: 14%;
+    width: 100px;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+.heart:before {
+    top: -50px;
+    left: 0;
+}
+
+.heart:after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes heartbeat
+{
+    0%
+    {
+        transform: scale( 1 )
+        rotate(-45deg);
+    }
+    20%
+    {
+        transform: scale( 1.25 )
+        rotate(-45deg);
+    }
+    40%
+    {
+        transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+}
